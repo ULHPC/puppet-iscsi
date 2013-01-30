@@ -1,0 +1,7 @@
+# iscsi targets, for all viridis nodes
+
+<% (0..47).each do |i| %>
+<target iqn.2013-01.com.iscsi-test.target0:viridis-<%= i %>>
+  backing-store /var/lib/localadmin/viridis-<%= i %>-target.img
+</target>
+<% end %>
