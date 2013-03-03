@@ -17,13 +17,13 @@
 # iscsi targets, for all viridis nodes
 <% path = '/srv/iscsi' %>
 
-<% (0..47).each do |i| %>
+<% (1..48).each do |i| %>
 <target iqn.2013-01.com.iscsi-test.target0:viridis-<%= i %>>
   backing-store <%= path %>/viridis-<%= i %>.img
 </target>
 <% end %>
 
-<% (100..147).each do |i| %>
+<% (101..148).each do |i| %>
 <target iqn.2013-01.com.iscsi-test.target0:viridis-<%= i %>>
   backing-store <%= path %>/viridis-<%= i %>.img
 </target>
