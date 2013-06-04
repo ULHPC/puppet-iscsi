@@ -94,6 +94,7 @@ class iscsi::target::common {
         mode    => "${iscsi::params::configfile_mode}",
         ensure  => "${iscsi::target::ensure}",
         notify  => Service['tgtd'],
+        require => Package[$iscsi::params::packagename]
     }
 
     if ($iscsi::target::content != '')
