@@ -15,7 +15,7 @@
 
 include 'iscsi::params'
 
-$names = ["ensure", "protocol", "port", "packagename"]
+$names = ['ensure', 'protocol', 'port', 'packagename']
 
 notice("iscsi::params::ensure = ${iscsi::params::ensure}")
 notice("iscsi::params::protocol = ${iscsi::params::protocol}")

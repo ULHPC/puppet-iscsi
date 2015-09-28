@@ -1,4 +1,4 @@
-# File::      <tt>iscsi-params.pp</tt>
+# File::      <tt>params.pp</tt>
 # Author::    Hyacinthe Cartiaux (hyacinthe.cartiaux@uni.lu)
 # Copyright:: Copyright (c) 2013 Hyacinthe Cartiaux
 # License::   GPLv3
@@ -30,20 +30,20 @@ class iscsi::params {
     ###########################################
 
     # ensure the presence (or absence) of iscsi
-    $ensure = $iscsi_ensure ? {
+    $ensure = $::iscsi_ensure ? {
         ''      => 'present',
-        default => "${iscsi_ensure}"
+        default => $::iscsi_ensure
     }
 
     # The Protocol used. Used by monitor and firewall class. Default is 'tcp'
-    $protocol = $iscsi_protocol ? {
+    $protocol = $::iscsi_protocol ? {
         ''      => 'tcp',
-        default => "${iscsi_protocol}",
+        default => $::iscsi_protocol,
     }
     # The port number. Used by monitor and firewall class. The default is 22.
-    $port = $iscsi_port ? {
+    $port = $::iscsi_port ? {
         ''      => 3260,
-        default => "${iscsi_port}",
+        default => $::iscsi_port,
     }
 
 
@@ -83,4 +83,3 @@ class iscsi::params {
 
 
 }
-
