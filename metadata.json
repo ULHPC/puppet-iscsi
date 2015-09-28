@@ -26,5 +26,19 @@
       ]
     }
   ],
-  "tags": ["iscsi"]
+  "tags": [
+    "iscsi"
+  ],
+  "classes": [
+    "iscsi",
+    "iscsi::params",
+    "iscsi::target",
+    "iscsi::target::common",
+    "iscsi::target::debian",
+    "iscsi::target::redhat",
+    "iscsi::target::ubuntu"
+  ],
+  "definitions": [
+
+  ]
 }
