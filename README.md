@@ -21,6 +21,13 @@ Configure and manage iscsi.
 This module implements the following elements: 
 
 * __Puppet classes__:
+    - `iscsi` 
+    - `iscsi::params` 
+    - `iscsi::target` 
+    - `iscsi::target::common` 
+    - `iscsi::target::debian` 
+    - `iscsi::target::redhat` 
+    - `iscsi::target::ubuntu` 
 
 * __Puppet definitions__: 
 
@@ -50,7 +57,6 @@ Use it as follows:
      include ' iscsi'
 
 See also [`tests/init.pp`](tests/init.pp)
-
 
 
 ## Librarian-Puppet / R10K Setup
