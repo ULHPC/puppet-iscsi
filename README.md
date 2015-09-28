@@ -58,19 +58,6 @@ Use it as follows:
 
 See also [`tests/init.pp`](tests/init.pp)
 
-### Class `iscsi::target`
-
-See [`tests/target.pp`](tests/target.pp)
-### Class `iscsi::target::debian`
-
-See [`tests/target/debian.pp`](tests/target/debian.pp)
-### Class `iscsi::target::redhat`
-
-See [`tests/target/redhat.pp`](tests/target/redhat.pp)
-### Class `iscsi::target::ubuntu`
-
-See [`tests/target/ubuntu.pp`](tests/target/ubuntu.pp)
-
 
 ## Librarian-Puppet / R10K Setup
 
