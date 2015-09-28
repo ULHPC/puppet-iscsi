@@ -15,7 +15,7 @@
 
 include 'iscsi::params'
 
-$names = ["ensure", "protocol", "port", "packagename", "servicename", "configfile", "configfile_init", "debian_init", "debian_init_mode", "configfile_mode", "configfile_owner", "configfile_group"]
+$names = ['ensure', 'protocol', 'port', 'packagename', 'servicename', 'configfile', 'configfile_init', 'debian_init', 'debian_init_mode', 'configfile_mode', 'configfile_owner', 'configfile_group']
 
 notice("iscsi::params::ensure = ${iscsi::params::ensure}")
 notice("iscsi::params::protocol = ${iscsi::params::protocol}")
