@@ -1,0 +1,30 @@
+{
+  "name": "ULHPC/iscsi",
+  "version": "0.1.0",
+  "author": "S. Varrette, H. Cartiaux, V. Plugaru, S. Diehl aka. UL HPC Management Team",
+  "mail": "hpc-sysadmins@uni.lu",
+  "summary": "Configure and manage iscsi",
+  "description": "Configure and manage iscsi",
+  "license": "GPL-3.0",
+  "source": "https://github.com/ULHPC/puppet-iscsi",
+  "docs_project": "ulhpc-puppet-iscsi",
+  "project_page": "https://github.com/ULHPC/puppet-iscsi",
+  "issues_url": "https://github.com/ULHPC/puppet-iscsi/issues",
+  "forge_url": "https://forge.puppetlabs.com/ULHPC/iscsi",
+  "dependencies": [
+    {
+      "name": "puppetlabs-stdlib",
+      "version_requirement": ">=4.2.2 <5.0.0"
+    }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    }
+  ],
+  "tags": ["iscsi"]
+}
